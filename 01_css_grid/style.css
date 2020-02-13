@@ -1,0 +1,68 @@
+.container {
+    display: grid;
+    grid-template-rows: [header] 100px [content] 1fr [footer] 25px;
+    grid-template-columns: auto;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    grid-row-start: header;
+
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: 2fr 1fr;
+}
+
+header nav {
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+header nav h1 {
+    height: 100%;
+    margin: 0;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    grid-column: 2 / 5;
+    justify-content: space-evenly;
+}
+
+header nav ul li {
+    flex: 1;
+}
+
+header nav ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+main {
+    grid-row-start: content;
+}
+
+footer {
+    grid-row-start: footer;
+}
+
+.d-flex {
+    display: flex;
+}

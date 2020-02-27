@@ -51,6 +51,7 @@ header nav ul li a {
     align-items: center;
     height: 100%;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 header nav ul li a:hover {
@@ -72,6 +73,22 @@ header .rating {
 
 main {
     grid-row-start: content;
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+}
+
+
+main section article {
+    margin: 0 0 20px 0;
+    padding: 1rem 1.6rem;
+    background-color: #A1A1A1;/* silver-chalice-01 */
+}
+
+
+main section article h2 {
+    font-size: 1.3rem;
+    margin: 0;
+    text-transform: uppercase;
 }
 
 footer {
@@ -82,12 +99,18 @@ footer {
     display: flex;
 }
 
-
+.margin-0 {
+    margin: 0;
+}
 
 /* colors */
 
 .text-silver-chalice {
     color: #AAAAAA;
+}
+
+.bg-silver-chalice-01 {
+    background: #A1A1A1;
 }
 
 .bg-silver {
